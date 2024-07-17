@@ -29,5 +29,19 @@
         <div class="volte">
             <a href="index.html">Voltar para a página inicial</a>
         </div>
+        <div id="mensagem-sucesso" style="display: none;">
+            <p>Sucesso na mensagem enviada!</p>
+            <a href="index.html">Voltar para o formulário</a>
+        </div>
+        <script>
+            // Método para controlar o envio
+            document.getElementById('form-contato').addEventListener('submit', function(event) {
+                event.preventDefault();
+        
+                // Demonstra a mensagem após o envio
+                document.getElementById('form-contato').style.display = 'none';
+                document.getElementById('mensagem-sucesso').style.display = 'block';
+            });
+        </script>
     </body>
 </html>
